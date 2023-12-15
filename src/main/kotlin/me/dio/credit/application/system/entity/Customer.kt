@@ -15,7 +15,7 @@ data class Customer(
     @Column(nullable = false, unique = true)
     var email: String = "",
     @Column(nullable = false)
-    val income: String = BigDecimal.ZERO,
+    val income: BigDecimal = BigDecimal.ZERO,
     @Column(nullable = false)
     var password: String = "",
     @Column(nullable = false) @Embedded
