@@ -3,7 +3,7 @@ package me.dio.credit.application.system.entity
 import jakarta.persistence.*
 
 @Entity //Vai se tornar uma tabela no db
-@Table(name = "Cliente") //Posso alterar o nome da tablea
+//@Table(name = "Cliente") //Posso alterar o nome da tablea
 data class Customer(
     @Column(nullable = false)
         var firstName: String = "", //Nao pode ser nulo

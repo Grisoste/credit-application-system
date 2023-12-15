@@ -7,7 +7,7 @@ import java.time.LocalDate
 import java.util.*
 
 @Entity //Vai se tornar uma tabela no db
-@Table(name = "Credito") //Posso alterar o nome da tablea
+//@Table(name = "Credito") //Posso alterar o nome da tablea
 data class Credit (
     @Column(nullable = false, unique = true) val creditCode: UUID = UUID.randomUUID(), //vai gerar automaticamente
     @Column(nullable = false) val creditValue: BigDecimal = BigDecimal.ZERO,
