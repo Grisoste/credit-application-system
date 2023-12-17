@@ -11,7 +11,7 @@ data class Customer(
     @Column(nullable = false)
     var lastName: String = "",
     @Column(nullable = false, unique = true)
-    val cpf: String, //dizendo que o email so pode ser unico
+    var cpf: String = "", //dizendo que o email so pode ser unico
     @Column(nullable = false, unique = true)
     var email: String = "",
     @Column(nullable = false)
